@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+/* COMPONENTS */
+.btn {
+  display: inline-block;
+  background-color: #303542;
+  padding: 1.5rem 4rem;
+  border-radius: 0.7rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* UTILITIES */
+.center-children {
+  padding-left: 8vw !important;
+  padding-right: 8vw !important;
+}
+
+/* NAVIGATION */
+.navigation {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation .logo {
+  flex: 1;
+  flex-shrink: 0;
+  font-size: 2.5rem;
+}
+
+.navigation .logo h1 {
+  font-weight: 500;
+}
+
+.navigation .nav_list {
+  flex: 3;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navigation .nav_list li {
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+.navigation .nav_list li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
+
+.navigation .nav_list li a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navigation .nav_actions {
+  flex: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+}
