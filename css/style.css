@@ -10,7 +10,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #0f0f0f;
   color: #ffffff;
 }
@@ -123,9 +123,9 @@ body {
 .header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 6rem 0;
+  margin: 6rem 0 10rem;
   border-radius: 2.5rem;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .header .column {
@@ -203,13 +203,11 @@ body {
 /*SECTION ICONS*/
 
 section.icons {
-  gap: 0.5rem;
-  margin: 7rem;
+  gap: 1.5px;
   position: relative;
-  min-height: 25vh;
   display: flex;
-  justify-content: center;
-  color: #96999a;
+  color: #ffffff;
+  margin-bottom: 10rem;
 }
 
 .icon {
@@ -225,37 +223,19 @@ section.icons .container-2 {
   flex: none;
 }
 
-section.icons .Icon-container-1 {
-  background-color: #303542;
-  height: 50%;
-  padding: 5rem 13rem;
-  border-radius: 15px;
-}
-
-section.icons .Icon-container-1 .heading-tertiary {
+section.icons .Icon-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: 0 auto;
-  font-size: 1rem;
+  flex-direction: column;
+  background-color: #303542;
+  height: 15rem;
 }
 
-section.icons .Icon-container-2 {
-  background-color: #303542;
-  height: 50%;
-  padding: 5rem 13rem;
-  border-radius: 15px;
-}
-section.icons .Icon-container-3 {
-  background-color: #303542;
-  height: 50%;
-  padding: 5rem 13rem;
-  border-radius: 15px;
-}
-section.icons .Icon-container-4 {
-  background-color: #303542;
-  height: 50%;
-  padding: 4.3rem 13rem;
-  border-radius: 15px;
+section.icons .Icon-container .heading-tertiary {
+  font-size: 1rem;
+  text-align: center;
 }
 
 /*SECTION INERIOR PLANS*/
@@ -359,13 +339,13 @@ section.icons .Icon-container-4 {
 
 /*SECTION IMPRESSIVE PROJECTS*/
 .impressive-projects {
-  min-height: 80vh;
-  margin: 5rem 10rem 5rem 10rem;
+  margin: 5rem 10rem;
+  text-align: center;
 }
 
 .impressive-projects .textbox {
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 
 .impressive-projects .textbox .heading-tertiary {
@@ -382,7 +362,7 @@ section.icons .Icon-container-4 {
 
 .impressive-projects .container {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .impressive-projects .container figure.composition {
@@ -434,10 +414,8 @@ section.icons .Icon-container-4 {
   font-weight: 400;
 }
 
-.impressive-projects .button {
-  font-size: 1.6rem;
+.impressive-projects .btn {
   text-align: center;
-  padding: 1.5rem 2rem;
 }
 
 @media only screen and (max-width: 1200px) {
