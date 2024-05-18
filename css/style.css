@@ -10,7 +10,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #0f0f0f;
   color: #ffffff;
 }
@@ -188,16 +188,256 @@ body {
   border-radius: 50%;
 }
 
-.header .column .avatar:not(:first-child) {
-  margin-left: -1rem;
-}
-
 .header .column .avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top;
   border-radius: inherit;
+}
+
+.header .column .avatar:not(:first-child) {
+  margin-left: -1rem;
+}
+
+/*SECTION ICONS*/
+
+section.icons {
+  gap: 0.5rem;
+  margin: 7rem;
+  position: relative;
+  min-height: 25vh;
+  display: flex;
+  justify-content: center;
+  color: #96999a;
+}
+
+.icon {
+  justify-content: center;
+  font-size: 4rem;
+  object-position: center;
+}
+
+section.icons .container-1 {
+  flex: none;
+}
+section.icons .container-2 {
+  flex: none;
+}
+
+section.icons .Icon-container-1 {
+  background-color: #303542;
+  height: 50%;
+  padding: 5rem 13rem;
+  border-radius: 15px;
+}
+
+section.icons .Icon-container-1 .heading-tertiary {
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+section.icons .Icon-container-2 {
+  background-color: #303542;
+  height: 50%;
+  padding: 5rem 13rem;
+  border-radius: 15px;
+}
+section.icons .Icon-container-3 {
+  background-color: #303542;
+  height: 50%;
+  padding: 5rem 13rem;
+  border-radius: 15px;
+}
+section.icons .Icon-container-4 {
+  background-color: #303542;
+  height: 50%;
+  padding: 4.3rem 13rem;
+  border-radius: 15px;
+}
+
+/*SECTION INERIOR PLANS*/
+
+.interior-plans {
+  min-height: 100vh;
+}
+
+.interior-plans .heading-secondary {
+  text-align: center;
+  margin: 3rem 0 7rem 0;
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+.interior-plans .container {
+  display: flex;
+  gap: 3rem;
+  margin-left: 8.5rem;
+  margin-right: 10rem;
+}
+
+/* .interior-plans .container .composition-1 {
+
+} */
+
+.interior-plans .container .composition-1 figure.composition {
+  height: 40rem;
+  width: 25rem;
+}
+
+.interior-plans .container .composition-1 figure.composition img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* .interior-plans .container .composition-2 {
+} */
+
+.interior-plans .container .composition-2 figure.composition {
+  height: 40rem;
+  width: 25rem;
+}
+
+.interior-plans .container .composition-2 figure.composition img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* .interior-plans .container .composition-3 {
+} */
+
+.interior-plans .container .composition-3 figure.composition {
+  height: 40rem;
+  width: 25rem;
+}
+
+.interior-plans .container .composition-3 figure.composition img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* .interior-plans .container .composition-4 {
+} */
+
+.interior-plans .container .composition-4 figure.composition {
+  height: 40rem;
+  width: 25rem;
+}
+
+.interior-plans .container .composition-4 figure.composition img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.interior-plans .container .textbox {
+  display: flex;
+  gap: 15rem;
+  margin-top: 2rem;
+}
+
+.interior-plans .container .textbox.break {
+  display: flex;
+  gap: 12rem;
+  margin-top: 2rem;
+}
+
+.interior-plans .container .textbox .icon span {
+  font-size: 2.3rem;
+  display: block;
+}
+
+.interior-plans .container .textbox .heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+/*SECTION IMPRESSIVE PROJECTS*/
+.impressive-projects {
+  min-height: 80vh;
+  margin: 5rem 10rem 5rem 10rem;
+}
+
+.impressive-projects .textbox {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.impressive-projects .textbox .heading-tertiary {
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.impressive-projects .textbox .paragraph {
+  font-size: 1.6rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.impressive-projects .container {
+  display: flex;
+  gap: 3rem;
+}
+
+.impressive-projects .container figure.composition {
+  height: 28rem;
+  width: 33rem;
+}
+
+.impressive-projects .container .composition img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.impressive-projects .container .composition-1 .textbox {
+  display: flex;
+  margin-top: 2rem;
+  gap: 15rem;
+}
+
+.impressive-projects .container .composition-1 .textbox .icon span {
+  display: block;
+  font-size: 2.3rem;
+}
+
+.impressive-projects .container .composition-2 .textbox {
+  display: flex;
+  margin-top: 2rem;
+  gap: 15rem;
+}
+
+.impressive-projects .container .composition-2 .textbox .icon span {
+  display: block;
+  font-size: 2.3rem;
+}
+
+.impressive-projects .container .composition-3 .textbox {
+  display: flex;
+  margin-top: 2rem;
+  gap: 15rem;
+}
+
+.impressive-projects .container .composition-3 .textbox .icon span {
+  display: block;
+  font-size: 2.3rem;
+}
+
+.impressive-projects .container .textbox .heading-university {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.impressive-projects .button {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1.5rem 2rem;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -219,7 +459,6 @@ body {
     grid-template-columns: 1fr 1.2fr;
   }
 }
-
 @media only screen and (max-width: 900px) {
   .heading-primary {
     font-size: 4.5rem;
@@ -298,6 +537,7 @@ body {
 
   .header {
     grid-template-columns: 1fr;
+    margin-bottom: 20rem;
   }
 
   .header .column {
@@ -305,7 +545,7 @@ body {
   }
 
   .header .column .row .info {
-	padding: 2rem;
+    padding: 2rem;
   }
 }
 
