@@ -468,12 +468,11 @@ section.about .textbox {
   flex: 1;
 }
 
-
-section.about .textbox .paragraph{
+section.about .textbox .paragraph {
   margin: 2rem 0 2rem 0;
 }
 
-section.about .textbox .btn{
+section.about .textbox .btn {
   margin: 1rem 0 2rem 0;
 }
 
@@ -486,7 +485,7 @@ section.about .textbox .btn{
   background-color: #303542;
   border-radius: 50%;
   margin-right: 7rem;
-
+  z-index: -1;
 }
 
 section.process {
@@ -558,6 +557,79 @@ section.process .composition img {
   border-radius: 2.5rem;
 }
 
+section.people .heading-secondary {
+  font-size: 5rem;
+  text-align: center;
+}
+
+section.people .paragraph-sm {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  padding: 1rem 0 2rem 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #96999a;
+}
+
+section.people .paragraph.sm {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #96999a;
+  margin: 0;
+}
+
+section.people .container.description {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  justify-content: space-between;
+}
+
+section.people .composition-1 .container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  gap: 13rem;
+  min-height: 10rem;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  padding: 0 2rem 0 2rem;
+  width: 100%;
+
+}
+
+section.people .container .composition-1 {
+  position: relative;
+  height: 45rem;
+  width: 40rem;
+}
+
+section.people .container .composition-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+section.people .composition-1 .container .heading-tertiary {
+  font-size: 1.5rem;
+}
+
+.people .btn {
+text-align: center;
+}
+
+section.people .composition-1 .container .icon svg {
+  border-radius: 50%;
+  border: #ffffff 1px solid;
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1200px) {
   .heading-primary {
     font-size: 6.5rem;
@@ -580,7 +652,7 @@ section.process .composition img {
 
 @media only screen and (max-width: 1200px) {
   .btn {
-    display: inline-block;
+ 
     background-color: #303542;
     padding: 1.2rem 4rem;
     border-radius: 0.7rem;
