@@ -10,7 +10,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #0f0f0f;
   color: #ffffff;
 }
@@ -322,7 +322,8 @@ section.icons .Icon-container .heading-tertiary {
 
 .interior-plans .container .textbox {
   display: flex;
-  gap: 28rem;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 2rem;
 }
 
@@ -344,8 +345,8 @@ section.icons .Icon-container .heading-tertiary {
 
 /*SECTION IMPRESSIVE PROJECTS*/
 .impressive-projects {
-  margin: 5rem 10rem;
   text-align: center;
+  margin: 15rem 0;
 }
 
 .impressive-projects .textbox {
@@ -366,15 +367,20 @@ section.icons .Icon-container .heading-tertiary {
 }
 
 .impressive-projects .container {
+  width: 100%;
   display: flex;
   gap: 2rem;
-  justify-content: center;
   align-items: center;
 }
 
+.impressive-projects .container .composition-wrapper {
+  flex: 1;
+}
+
 .impressive-projects .container figure.composition {
-  height: 28rem;
-  width: 33rem;
+  width: 100%;
+  height: 30rem;
+  margin-bottom: 2rem;
 }
 
 .impressive-projects .container .composition img {
@@ -383,38 +389,13 @@ section.icons .Icon-container .heading-tertiary {
   border-radius: 15px;
 }
 
-.impressive-projects .container .composition-1 .textbox {
+.impressive-projects .container .composition-wrapper .textbox {
   display: flex;
   margin-top: 2rem;
-  /* gap: 15rem; */
   justify-content: space-between;
 }
 
-.impressive-projects .container .composition-1 .textbox .icon span {
-  display: block;
-  font-size: 2.3rem;
-}
-
-.impressive-projects .container .composition-2 .textbox {
-  display: flex;
-  margin-top: 2rem;
-  /* gap: 15rem; */
-  justify-content: space-between;
-}
-
-.impressive-projects .container .composition-2 .textbox .icon span {
-  display: block;
-  font-size: 2.3rem;
-}
-
-.impressive-projects .container .composition-3 .textbox {
-  display: flex;
-  margin-top: 2rem;
-  /* gap: 15rem; */
-  justify-content: space-between;
-}
-
-.impressive-projects .container .composition-3 .textbox .icon span {
+.impressive-projects .container .composition-wrapper .textbox .icon span {
   display: block;
   font-size: 2.3rem;
 }
@@ -429,28 +410,22 @@ section.icons .Icon-container .heading-tertiary {
   margin-bottom: 5rem;
 }
 
-section.about {
-  margin: 10rem 10rem;
-}
-
 section.about .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
   gap: 4rem;
 }
 
 section.about figure.composition {
-  height: 45rem;
-  width: 20rem;
-  flex: 0.8;
+  height: 40rem;
+  width: 40rem;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
 }
 
 section.about figure.composition img {
   height: 100%;
   width: 100%;
-  border-radius: 50%;
+  border-radius: inherit;
 }
 
 section.about .textbox {
@@ -482,7 +457,7 @@ section.process {
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
   margin-bottom: 10rem;
-  margin-top: 5rem;
+  margin-top: 15rem;
 }
 
 section.process .textbox {
@@ -581,12 +556,12 @@ section.people .container.description {
 }
 
 section.people .composition-1 .container {
-  display: flex;
   position: absolute;
   bottom: 0;
-  gap: 13rem;
-  min-height: 10rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  min-height: 10rem;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(3px);
   padding: 0 2rem 0 2rem;
@@ -597,13 +572,14 @@ section.people .container .composition-1 {
   position: relative;
   height: 45rem;
   width: 40rem;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 section.people .container .composition-1 img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 15px;
 }
 
 section.people .composition-1 .container .heading-tertiary {
@@ -632,7 +608,7 @@ section.project {
       rgba(21, 19, 19, 0.53),
       rgba(46, 46, 42, 0.53)
     ),
-    url("/assets/comp13.jpg");
+    url('/assets/comp13.jpg');
   background-size: cover;
   background-position: center;
   padding: 10rem 10rem;
@@ -687,7 +663,6 @@ section.project input {
   display: flex;
   margin-top: 10rem;
   border-bottom: #ffffff 0.5px solid;
-  margin-bottom: 5rem;
 }
 
 .footer-container figure.logo {
@@ -746,14 +721,18 @@ section.project input {
   font-size: 1.3rem;
 }
 
-.container-foot{
+.container-foot {
   display: flex;
   justify-content: space-between;
-
-
+  align-items: center;
+  padding: 2rem 0;
 }
 
-.container-foot ul.list{
+.container-foot p {
+  margin: 0;
+}
+
+.container-foot ul.list {
   color: #96999a;
   display: flex;
   gap: 3.5rem;
@@ -761,10 +740,9 @@ section.project input {
   font-weight: normal;
   justify-content: center;
   list-style: none;
-
 }
 
-.container-foot .paragraph{
+.container-foot .paragraph {
   font-size: 1.3rem;
 }
 
@@ -818,7 +796,7 @@ section.project input {
 
   .interior-plans .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     /* gap: 1.5rem; */
     margin-left: 2rem;
     margin-right: 2rem;
@@ -826,13 +804,8 @@ section.project input {
   }
 
   .impressive-projects {
-    margin: 5rem 5rem;
     text-align: center;
-  }
-
-  .impressive-projects .textbox {
-    text-align: center;
-    margin-bottom: 4rem;
+    
   }
 
   .impressive-projects .textbox .heading-tertiary {
@@ -847,15 +820,10 @@ section.project input {
     margin: 0 auto;
   }
 
-  .impressive-projects .container {
-    display: flex;
-    gap: 2rem;
-  }
-
-  .impressive-projects .container figure.composition {
+  /* .impressive-projects .container figure.composition {
     height: 25rem;
     width: 27rem;
-  }
+  } */
 
   .impressive-projects .container .composition img {
     height: 100%;
@@ -1076,6 +1044,12 @@ section.project input {
 
   .navigation #checkbox:checked ~ .nav_actions .nav_button span.close {
     display: flex;
+  }
+
+  section.about .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   section.process {
@@ -1353,6 +1327,10 @@ section.project input {
     margin-bottom: 10rem;
   }
 
+  .interior-plans .container {
+    grid-template-columns: 1fr;
+  }
+
   .interior-plans .container .textbox {
     display: flex;
     /* gap: 45rem; */
@@ -1370,48 +1348,6 @@ section.project input {
   }
 
   .interior-plans .container .composition-1 figure.composition img {
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
-  }
-
-  /* .interior-plans .container .composition-2 {
-} */
-
-  .interior-plans .container .composition-2 figure.composition {
-    height: 40rem;
-    width: 25rem;
-  }
-
-  .interior-plans .container .composition-2 figure.composition img {
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
-  }
-
-  /* .interior-plans .container .composition-3 {
-} */
-
-  .interior-plans .container .composition-3 figure.composition {
-    height: 40rem;
-    width: 25rem;
-  }
-
-  .interior-plans .container .composition-3 figure.composition img {
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
-  }
-
-  /* .interior-plans .container .composition-4 {
-} */
-
-  .interior-plans .container .composition-4 figure.composition {
-    height: 40rem;
-    width: 25rem;
-  }
-
-  .interior-plans .container .composition-4 figure.composition img {
     height: 100%;
     width: 100%;
     border-radius: 15px;
