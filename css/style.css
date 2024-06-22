@@ -10,7 +10,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #0f0f0f;
   color: #ffffff;
 }
@@ -271,7 +271,7 @@ section.icons .Icon-container .heading-tertiary {
 .interior-plans .container {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 3rem;
 }
 
 /* .interior-plans .container .composition-1 {
@@ -608,7 +608,7 @@ section.project {
       rgba(21, 19, 19, 0.53),
       rgba(46, 46, 42, 0.53)
     ),
-    url('/assets/comp13.jpg');
+    url("/assets/comp13.jpg");
   background-size: cover;
   background-position: center;
   padding: 10rem 10rem;
@@ -644,18 +644,15 @@ button.button {
   font-size: 1.8rem;
   border: none;
   width: 40rem;
+  border-radius: 12px;
 }
+
 section.project input {
   background-color: transparent;
   color: #ffffff;
   padding: 1.4rem 4rem;
   border: #ffffff 1px solid;
-}
-section.project input {
-  background-color: transparent;
-  color: #ffffff;
-  padding: 1.4rem 4rem;
-  border: #ffffff 1px solid;
+  border-radius: 12px;
 }
 
 .footer-container {
@@ -805,7 +802,6 @@ section.project input {
 
   .impressive-projects {
     text-align: center;
-    
   }
 
   .impressive-projects .textbox .heading-tertiary {
@@ -929,14 +925,14 @@ section.project input {
   }
 
   .impressive-projects .textbox .heading-tertiary {
-    font-size: 5rem;
+    font-size: 4.2rem;
     font-weight: 500;
     margin-bottom: 2rem;
   }
 
   .impressive-projects .textbox .paragraph {
-    font-size: 1.6rem;
-    width: 65%;
+    font-size: 1.5rem;
+    width: 85%;
     margin: 0 auto;
   }
 
@@ -1102,6 +1098,74 @@ section.project input {
     gap: 4rem;
     margin-bottom: 10rem;
   }
+
+  section.people .heading-secondary {
+    font-size: 4.2rem;
+    text-align: center;
+  }
+
+  section.people .container.description {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 5rem;
+    margin-bottom: 5rem;
+    justify-items: center;
+  }
+
+  section.people .container .composition-1 {
+    position: relative;
+    height: 40rem;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  section.people .container .composition-1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .project .heading-secondary {
+    font-size: 4.2rem;
+  }
+
+  .project p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+
+  section.project {
+    min-width: 70vh;
+    background-image: linear-gradient(
+        to right,
+        rgba(21, 19, 19, 0.53),
+        rgba(46, 46, 42, 0.53)
+      ),
+      url(/assets/comp13.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 4rem;
+  }
+  section.project input {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 1.2rem 4rem;
+    border: #ffffff 1px solid;
+    border-radius: 12px;
+  }
+
+  button.button {
+    color: #ffffff;
+    padding: 1.4rem 9.3rem;
+    background-color: #303542;
+    border-radius: 0.7rem;
+    font-size: 1.4rem;
+    border: none;
+    width: 40rem;
+    border-radius: 12px;
+  }
 }
 
 @media only scrren and (max-width: 622px) {
@@ -1196,8 +1260,23 @@ section.project input {
   section.process {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
     gap: 4rem;
     margin-bottom: 10rem;
+  }
+
+  section.people .container .composition-1 {
+    position: relative;
+    height: 35rem;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  section.people .container .composition-1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -1351,5 +1430,88 @@ section.project input {
     height: 100%;
     width: 100%;
     border-radius: 15px;
+  }
+
+  section.about figure.composition {
+    height: 35rem;
+    width: 35rem;
+    border-radius: 50%;
+  }
+
+  section.about figure.composition img {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+  }
+
+  section.people .heading-secondary {
+    font-size: 3.3rem;
+    text-align: center;
+  }
+
+  .project .heading-secondary {
+    font-size: 3rem;
+  }
+  .project p {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+
+  section.project {
+    min-width: 50vh;
+    background-image: linear-gradient(
+        to right,
+        rgba(21, 19, 19, 0.53),
+        rgba(46, 46, 42, 0.53)
+      ),
+      url(/assets/comp13.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 2rem;
+  }
+
+  section.project input {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 1.2rem 4rem;
+    border: #ffffff 1px solid;
+    border-radius: 12px;
+    width: 30rem;
+    font-weight: normal;
+  }
+
+  button.button {
+    color: #ffffff;
+    padding: 1.4rem 9.3rem;
+    background-color: #303542;
+    border-radius: 0.7rem;
+    font-size: 1.4rem;
+    border: none;
+    width: 30rem;
+    border-radius: 12px;
+  }
+
+  .footer-container {
+    gap: 3rem;
+    display: grid;
+    margin-top: 10rem;
+    border-bottom: #ffffff 0.5px solid;
+  }
+
+  .footer-container figure.logo {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  
+
+  .container-foot {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+    padding: 2rem 0;
   }
 }
