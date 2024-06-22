@@ -236,9 +236,9 @@ section.icons .container-1 {
   flex: none;
 }
 
-section.icons .container-2 {
-  flex: none;
-}
+/* section.icons .container-2 {
+
+} */
 
 section.icons .Icon-container {
   flex: 1;
@@ -280,7 +280,7 @@ section.icons .Icon-container .heading-tertiary {
 
 .interior-plans .container .composition-1 figure.composition {
   height: 40rem;
-  width: 25rem;
+  width: 100%;
 }
 
 .interior-plans .container .composition-1 figure.composition img {
@@ -294,7 +294,7 @@ section.icons .Icon-container .heading-tertiary {
 
 .interior-plans .container .composition-2 figure.composition {
   height: 40rem;
-  width: 25rem;
+  width: 100%;
 }
 
 .interior-plans .container .composition-2 figure.composition img {
@@ -306,23 +306,12 @@ section.icons .Icon-container .heading-tertiary {
 /* .interior-plans .container .composition-3 {
 } */
 
-.interior-plans .container .composition-3 figure.composition {
-  height: 40rem;
-  width: 25rem;
-}
-
-.interior-plans .container .composition-3 figure.composition img {
-  height: 100%;
-  width: 100%;
-  border-radius: 15px;
-}
-
 /* .interior-plans .container .composition-4 {
 } */
 
 .interior-plans .container .composition-4 figure.composition {
   height: 40rem;
-  width: 25rem;
+  width: 100%;
 }
 
 .interior-plans .container .composition-4 figure.composition img {
@@ -333,13 +322,13 @@ section.icons .Icon-container .heading-tertiary {
 
 .interior-plans .container .textbox {
   display: flex;
-  justify-content: space-between;
+  gap: 28rem;
   margin-top: 2rem;
 }
 
 .interior-plans .container .textbox.break {
   display: flex;
-  justify-content: space-between;
+  gap: 25rem;
   margin-top: 2rem;
 }
 
@@ -478,7 +467,7 @@ section.about .textbox .btn {
 
 .color {
   position: absolute;
-  top: 280%;
+  top: 370%;
   right: 0;
   height: 10rem;
   width: 10rem;
@@ -493,6 +482,7 @@ section.process {
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
   margin-bottom: 10rem;
+  margin-top: 5rem;
 }
 
 section.process .textbox {
@@ -557,6 +547,10 @@ section.process .composition img {
   border-radius: 2.5rem;
 }
 
+section.people {
+  margin-bottom: 20rem;
+}
+
 section.people .heading-secondary {
   font-size: 5rem;
   text-align: center;
@@ -597,7 +591,6 @@ section.people .composition-1 .container {
   backdrop-filter: blur(3px);
   padding: 0 2rem 0 2rem;
   width: 100%;
-
 }
 
 section.people .container .composition-1 {
@@ -617,8 +610,10 @@ section.people .composition-1 .container .heading-tertiary {
   font-size: 1.5rem;
 }
 
-.people .btn {
-text-align: center;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section.people .composition-1 .container .icon svg {
@@ -628,6 +623,149 @@ section.people .composition-1 .container .icon svg {
   height: 4rem;
   padding: 1rem 1rem;
   text-align: center;
+}
+
+section.project {
+  min-width: 70vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(21, 19, 19, 0.53),
+      rgba(46, 46, 42, 0.53)
+    ),
+    url("/assets/comp13.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 10rem;
+}
+
+.project .heading-secondary {
+  font-size: 5rem;
+}
+
+section.project input {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 1.2rem 15rem;
+  border: #ffffff 1px solid;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  width: 40rem;
+}
+
+section.project input::placeholder {
+  color: #ffffff;
+}
+
+section.project input:focus {
+  outline: none;
+}
+
+button.button {
+  color: #ffffff;
+  padding: 1.4rem 9.3rem;
+  background-color: #303542;
+  border-radius: 0.7rem;
+  font-size: 1.8rem;
+  border: none;
+  width: 40rem;
+}
+section.project input {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 1.4rem 4rem;
+  border: #ffffff 1px solid;
+}
+section.project input {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 1.4rem 4rem;
+  border: #ffffff 1px solid;
+}
+
+.footer-container {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 10rem;
+  border-bottom: #ffffff 0.5px solid;
+  margin-bottom: 5rem;
+}
+
+.footer-container figure.logo {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-bottom: 30rem;
+}
+
+.footer-container figure.logo img {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.footer-container figure.logo .heading-teriatary {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.footer-container .footer-list-2 .heading-teriatary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
+.footer-container .footer-list-2 .list li {
+  color: #96999a;
+  list-style: none;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.footer-container .footer-list-3 .heading-teriatary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
+.footer-container .footer-list-3 .list li {
+  color: #96999a;
+  list-style: none;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.footer-container .footer-list-4 .heading-teriatary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
+.footer-container .footer-list-4 .list li {
+  color: #96999a;
+  list-style: none;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.container-foot{
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.container-foot ul.list{
+  color: #96999a;
+  display: flex;
+  gap: 3.5rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  justify-content: center;
+  list-style: none;
+
+}
+
+.container-foot .paragraph{
+  font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -652,7 +790,6 @@ section.people .composition-1 .container .icon svg {
 
 @media only screen and (max-width: 1200px) {
   .btn {
- 
     background-color: #303542;
     padding: 1.2rem 4rem;
     border-radius: 0.7rem;
@@ -762,6 +899,35 @@ section.people .composition-1 .container .icon svg {
   .impressive-projects .container .textbox .heading-university {
     font-size: 1.6rem;
     font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .heading-primary {
+    font-size: 6.5rem;
+  }
+
+  .center-children {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+  }
+
+  .navigation {
+    padding: 2rem 0;
+  }
+
+  .header {
+    gap: 2.5rem;
+    grid-template-columns: 1fr 1.2fr;
+  }
+
+  .interior-plans .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -926,6 +1092,11 @@ section.people .composition-1 .container .icon svg {
 }
 
 @media only screen and (max-width: 750px) {
+  .center-children {
+    padding-left: 2vw !important;
+    padding-right: 2vw !important;
+  }
+
   .heading-primary {
     font-size: 4.5rem;
   }
@@ -940,6 +1111,73 @@ section.people .composition-1 .container .icon svg {
 
   .header .column .row .info {
     padding: 2rem;
+  }
+
+  .interior-plans .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  section.process {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    margin-bottom: 10rem;
+  }
+}
+
+@media only scrren and (max-width: 622px) {
+  .interior-plans .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  .impressive-projects .container .composition-1 .textbox .icon span {
+    display: block;
+    font-size: 2rem;
+  }
+  .impressive-projects .container .composition-2 .textbox .icon span {
+    display: block;
+    font-size: 2rem;
+  }
+  .impressive-projects .container .composition-3 .textbox .icon span {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .interior-plans .container .composition-1 figure.composition img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .interior-plans .container .composition-2 figure.composition img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  .interior-plans .container .composition-3 figure.composition img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  .interior-plans .container .composition-4 figure.composition img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
   }
 
   .interior-plans .container {
