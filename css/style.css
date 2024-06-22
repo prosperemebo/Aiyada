@@ -271,7 +271,7 @@ section.icons .Icon-container .heading-tertiary {
 .interior-plans .container {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 3rem;
 }
 
 /* .interior-plans .container .composition-1 {
@@ -1437,7 +1437,7 @@ section.project input {
     width: 35rem;
     border-radius: 50%;
   }
-  
+
   section.about figure.composition img {
     height: 100%;
     width: 100%;
@@ -1500,10 +1500,18 @@ section.project input {
     border-bottom: #ffffff 0.5px solid;
   }
 
+  .footer-container figure.logo {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  
+
   .container-foot {
-display: grid;
-gap: 3rem;
+    display: grid;
+    gap: 3rem;
     align-items: center;
     padding: 2rem 0;
-}
+  }
 }
